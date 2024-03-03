@@ -1,2 +1,2 @@
 ## <u>Weatherly!</u>
-<img src="Weather app.png"></img>
+<img src="./src/Weather app.png"></img>
