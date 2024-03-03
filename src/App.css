@@ -1,0 +1,140 @@
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.right {
+  background-color: rgba(39, 40, 43, 0.96);
+  border-radius: 30px 0 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 40px 40px 55px;  
+}
+img{
+  width: 200px;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: white;
+  
+}
+
+.desc{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color:white;
+  letter-spacing:1.5px;
+}
+.leftCon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weatherBox{
+  background-color: rgb(30, 30, 32);
+  border-radius: 8px;
+  height: 400px;
+  width: 330px;
+  position: relative;
+}
+video{
+  border-radius: 8px;
+  position: absolute;
+  width: 330px;
+  height: 400px;
+  object-fit:cover;
+  z-index: 0;
+  opacity: 0.34;
+  
+  
+}
+.caption{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  height: 100%;
+  overflow:hidden;
+}
+.searchTitle{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color:rgba(255, 255, 255, 0.747);
+  font-size: 1.8rem;
+  margin: 30px 0 20px;
+}
+#playVideo{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+}
+.fa-solid{
+  color:rgba(255, 255, 255, 0.747);
+  font-size: 1rem;
+}
+.caption input{
+  border-radius: 6px;
+  height: 35px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.747);
+  margin: 5px 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.fa-moon{
+  font-size: 100px;
+  margin: 80px auto 75px;
+}
+#degree{
+  color:rgba(255, 255, 255, 0.267);
+}
+.info{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color:rgba(255, 255, 255, 0.747);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px 0px 30px ;
+
+}
+.weatherCondition ,.degreeCond{
+  font-size: 0.9rem;
+}
