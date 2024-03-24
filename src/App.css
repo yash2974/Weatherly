@@ -138,3 +138,7 @@ video{
 .weatherCondition ,.degreeCond{
   font-size: 0.9rem;
 }
+#searchBox{
+  outline: none;
+  padding: 0 10px;
+}
