@@ -9,7 +9,7 @@ export default function Details(){
                 <p className="desc">Our weather app offers accurate forecasts worldwide, detailed hourly and daily predictions.</p>
             </div>
             <div>
-                <img src="../src/FujiwaraAnime.webp"></img>
+                <img src="./src/FujiwaraAnime.webp"></img>
             </div>
         </div>
     )

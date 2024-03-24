@@ -42,7 +42,7 @@ export default function WeatherComponent() {
   return (
     <div className="leftCon">
       <div className="weatherBox">
-        <video id="back-video" ref={videoRef} src="../src/back.mp4" loop></video>
+        <video id="back-video" ref={videoRef} src="./src/back.mp4" loop></video>
         <div className="caption">
           <button id="playVideo" onClick={backgroundHandler}><h1 className="searchTitle">Search Location</h1></button>
           <input id="searchBox" placeholder="Delhi" onKeyPress={(e) => {
