@@ -4,7 +4,15 @@ import "../src/App.css"
 export default function(){
 
     const videoRef = useRef(null);
+    const apiKey="41dd429e1c9498e03ca54b6022d62d49";
 
+    const [weatherData,SetWeatherData] = React.useState({
+        degree:"00",
+        weather:"Weather",
+        AQI:"AQI"
+
+    })
+    // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={apiKey}
     function backgroundHandler(){
         if(videoRef.current.paused){
         videoRef.current.play();}
@@ -21,10 +29,10 @@ export default function(){
                 <input placeholder=" Enter Location"></input>
                 <i className="fa-solid fa-moon fa-2xl"></i>
                 <div className="info">
-                    <div className="degreeCond"><h2>00°<span id="degree">c</span></h2></div>
+                    <div className="degreeCond"><h2>{weatherData.degree}°<span id="degree">c</span></h2></div>
                     <div className="weatherCondition">
-                        <div ><h2 id="weatherInfo">Weather</h2></div>
-                        <div><h2 id="aqi">AQI</h2></div>
+                        <div ><h2 id="weatherInfo">{weatherData.weather}</h2></div>
+                        <div><h2 id="aqi">{weatherData.AQI}</h2></div>
                     </div>
                 </div>
                 
